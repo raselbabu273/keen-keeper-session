@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Sarah Jenkins",
+    "picture": "https://images.unsplash.com/photo-1494790108377-be9c29b29330",
+    "email": "sarah.j@example.com",
+    "days_since_contact": 18,
+    "status": "Overdue",
+    "tags": ["college", "inner circle"],
+    "bio": "Roommate from Boston University. Avid coffee drinker and weekend marathon runner.",
+    "goal": 14,
+    "next_due_date": "2026-05-17"
+  },
+  {
+    "id": 2,
+    "name": "Marcus Chen",
+    "picture": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d",
+    "email": "marcus.chen@example.com",
+    "days_since_contact": 5,
+    "status": "On-Track",
+    "tags": ["childhood", "gaming"],
+    "bio": "Grew up on the same street. We still play co-op games every Tuesday night.",
+    "goal": 7,
+    "next_due_date": "2026-05-23"
+  },
+  {
+    "id": 3,
+    "name": "Elena Rostova",
+    "picture": "https://images.unsplash.com/photo-1534528741775-53994a69daeb",
+    "email": "elena.ros@example.com",
+    "days_since_contact": 26,
+    "status": "Almost due",
+    "tags": ["travel", "long distance"],
+    "bio": "Met during a backpacking trip through Europe. Currently living in Berlin.",
+    "goal": 30,
+    "next_due_date": "2026-05-25"
+  },
+  {
+    "id": 4,
+    "name": "David Kim",
+    "picture": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e",
+    "email": "d.kim.tech@example.com",
+    "days_since_contact": 42,
+    "status": "Overdue",
+    "tags": ["professional", "mentor"],
+    "bio": "Former engineering lead at my first job. Always gives great career advice over lunch.",
+    "goal": 30,
+    "next_due_date": "2026-05-09"
+  },
+  {
+    "id": 5,
+    "name": "Aisha Patel",
+    "picture": "https://images.unsplash.com/photo-1517841905240-472988babdf9",
+    "email": "aisha.patel@example.com",
+    "days_since_contact": 2,
+    "status": "On-Track",
+    "tags": ["neighbor", "fitness"],
+    "bio": "Lives two doors down. Our go-to partner for morning tennis matches and local community events.",
+    "goal": 7,
+    "next_due_date": "2026-05-26"
+  },
+  {
+    "id": 6,
+    "name": "Carlos Mendez",
+    "picture": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6",
+    "email": "carlos.m@example.com",
+    "days_since_contact": 13,
+    "status": "Almost due",
+    "tags": ["hobby", "music"],
+    "bio": "Bassist in our casual weekend garage band. Loves vintage vinyl records and vinyl hunting.",
+    "goal": 14,
+    "next_due_date": "2026-05-22"
+  },
+  {
+    "id": 7,
+    "name": "Chloe Vance",
+    "picture": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1",
+    "email": "chloe.vance@example.com",
+    "days_since_contact": 55,
+    "status": "Overdue",
+    "tags": ["high school", "old friend"],
+    "bio": "Best friend from high school chemistry class. We always catch up when she is back in town.",
+    "goal": 45,
+    "next_due_date": "2026-05-11"
+  },
+  {
+    "id": 8,
+    "name": "Jordan Taylor",
+    "picture": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61",
+    "email": "jordan.t@example.com",
+    "days_since_contact": 1,
+    "status": "On-Track",
+    "tags": ["college", "close friend"],
+    "bio": "Met during freshman orientation. Shares a passion for indie films and cooking complicated recipes.",
+    "goal": 14,
+    "next_due_date": "2026-06-03"
+  }
+]

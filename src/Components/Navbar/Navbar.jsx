@@ -1,0 +1,20 @@
+import { AiOutlineLineChart } from "react-icons/ai";
+import { FiClock } from "react-icons/fi";
+import { RiHome2Line } from "react-icons/ri";
+import { NavLink } from "react-router";
+import Logo from '../../assets/logo.png';
+
+const Navbar = () => {
+  return (
+    <div className="flex justify-between py-4 items-center">
+      <div><img src={Logo} alt="" /></div>
+      <div className="flex gap-2 text-[#64748B] font-mono">
+        <NavLink to={"/"} className={({isActive}) => (isActive ? "bg-[#244D3F] text-white" : "") + ' flex items-center gap-1 p-2 rounded-md '}><RiHome2Line /> Home</NavLink>
+        <NavLink to={"/timeline"} className={({isActive}) => (isActive ? "bg-[#244D3F] text-white" : "") + ' flex items-center gap-1 p-2 rounded-md '}><FiClock /> Timeline</NavLink>
+        <NavLink to={"/stats"} className={({isActive}) => (isActive ? "bg-[#244D3F] text-white" : "") + ' flex items-center gap-1 p-2 rounded-md '}><AiOutlineLineChart /> Stats</NavLink>
+      </div>
+    </div>
+  );
+};
+
+export default Navbar;

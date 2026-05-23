@@ -8,7 +8,7 @@ const HomePage = () => {
   const friends = use(friendPromise);
 
   return (
-    <div className="py-20 w-11/16 mx-auto">
+    <div className="py-20 max-w-12/16 mx-auto">
       <div className="text-center">
         <h2 className="text-5xl font-bold">
           Friends to keep close in your life

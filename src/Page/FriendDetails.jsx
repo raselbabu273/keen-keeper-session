@@ -34,7 +34,7 @@ const FriendDetails = () => {
       <div className="max-w-12/16 w-full grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* ================= LEFT COLUMN: PROFILE & QUICK ACTIONS ================= */}
         <div className="space-y-4">
-          <div className="bg-white rounded-md shadow-sm border border-gray-100 p-6 flex flex-col items-center text-center">
+          <div className="bg-[#FFFFFF] rounded-md shadow-sm border border-gray-100 p-6 flex flex-col items-center text-center">
             <img
               className="w-32 h-32 rounded-full object-cover border-2 border-gray-300 shadow-sm mb-4"
               src={picture}
@@ -73,13 +73,13 @@ const FriendDetails = () => {
 
           {/* Action List Buttons */}
           <div className="space-y-2">
-            <button className="btn w-full flex items-center justify-center gap-2 bg-white border border-gray-200 font-medium py-5 rounded-md shadow-sm text-sm">
+            <button className="btn w-full flex items-center justify-center gap-2 bg-[#FFFFFF] border border-gray-200 font-medium py-5 rounded-md shadow-sm text-sm">
               <RiNotificationSnoozeLine /> Snooze 2 Weeks
             </button>
-            <button className="btn w-full flex items-center justify-center gap-2 bg-white border border-gray-200 font-medium py-5 rounded-md shadow-sm text-sm">
+            <button className="btn w-full flex items-center justify-center gap-2 bg-[#FFFFFF] border border-gray-200 font-medium py-5 rounded-md shadow-sm text-sm">
               <LuArchive /> Archive
             </button>
-            <button className="btn w-full flex items-center justify-center gap-2 bg-white hover:bg-red-50 border border-gray-200 hover:border-red-200 text-red-500 font-medium py-5 rounded-md shadow-sm text-sm">
+            <button className="btn w-full flex items-center justify-center gap-2 bg-[#FFFFFF] hover:bg-red-50 border border-gray-200 hover:border-red-200 text-red-500 font-medium py-5 rounded-md shadow-sm text-sm">
               <RiDeleteBinLine /> Delete
             </button>
           </div>
@@ -116,7 +116,7 @@ const FriendDetails = () => {
           </div>
 
           {/* Relationship Goal Card */}
-          <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-6 flex justify-between items-start">
+          <div className="bg-[#FFFFFF] rounded-xl border border-gray-100 shadow-sm p-6 flex justify-between items-start">
             <div>
               <h3 className="text-emerald-900 font-bold text-base mb-3">
                 Relationship Goal
@@ -134,7 +134,7 @@ const FriendDetails = () => {
           </div>
 
           {/* Quick Check-In Communications Panel */}
-          <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-6">
+          <div className="bg-[#FFFFFF] rounded-xl border border-gray-100 shadow-sm p-6">
             <h3 className="text-emerald-900 font-bold text-base mb-4">
               Quick Check-In
             </h3>

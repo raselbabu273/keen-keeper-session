@@ -6,7 +6,7 @@ import Logo from "../../assets/logo.png";
 
 const Navbar = () => {
   return (
-    <div className="border-b border-base-300 bg-[#FFFF]">
+    <div className="border-b border-base-300 bg-[#FFFFFF]">
       <div className="container mx-auto flex justify-between py-4 items-center">
         <div>
           <img src={Logo} alt="" />

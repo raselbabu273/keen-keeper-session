@@ -11,7 +11,7 @@ const Navbar = () => {
         <div>
           <img src={Logo} alt="" />
         </div>
-        <div className="flex gap-2 text-[#64748B] font-mono">
+        <div className="flex gap-2 text-[#64748B] text-xs md:text-[16px] font-mono">
           <NavLink
             to={"/"}
             className={({ isActive }) =>

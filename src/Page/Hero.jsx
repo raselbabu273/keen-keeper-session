@@ -1,8 +1,13 @@
 // import React from 'react';
 
+import { useContext } from "react";
 import { FiPlus } from "react-icons/fi";
+import { TimelineContext } from "../Context/Context";
 
 const Hero = () => {
+
+   const {timelineData} = useContext(TimelineContext);
+
   return (
     <div className="pt-20 max-w-12/16 mx-auto">
       <div className="text-center">
@@ -35,7 +40,7 @@ const Hero = () => {
           <p className="text-[#64748B]">Need Attention</p>
         </div>
         <div className="text-center bg-[#FFFFFF] my-10 p-8 shadow-md rounded-md w-full">
-          <h3 className="text-3xl text-[#244D3F] font-semibold mb-2">11</h3>
+          <h3 className="text-3xl text-[#244D3F] font-semibold mb-2">{timelineData.length}</h3>
           <p className="text-[#64748B]">Interactions This Month</p>
         </div>
       </div>

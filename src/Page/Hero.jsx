@@ -9,7 +9,7 @@ const Hero = () => {
    const {timelineData} = useContext(TimelineContext);
 
   return (
-    <div className="pt-20 max-w-12/16 mx-auto">
+    <div className="pt-10 max-w-14/16 md:pt-20 md:max-w-12/16 mx-auto">
       <div className="text-center">
         <h2 className="text-5xl font-bold">
           Friends to keep close in your life

@@ -3,7 +3,7 @@
 export default function Footer() {
   return (
     <footer className="bg-[#1E4D3A]">
-      <div className="max-w-12/16 mx-auto flex flex-col items-center text-center text-white py-12 md:py-16">
+      <div className="max-w-14/16 md:max-w-12/16 mx-auto flex flex-col items-center text-center text-white py-12 md:py-16">
         
         <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight mb-4">
           KeenKeeper

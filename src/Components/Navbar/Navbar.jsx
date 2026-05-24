@@ -16,7 +16,7 @@ const Navbar = () => {
             to={"/"}
             className={({ isActive }) =>
               (isActive ? "bg-[#244D3F] text-white" : "") +
-              " flex items-center gap-1 p-2 rounded-md "
+              " flex items-center gap-1 p-1 md:p-2 rounded-md"
             }
           >
             <RiHome2Line /> Home
@@ -25,7 +25,7 @@ const Navbar = () => {
             to={"/timeline"}
             className={({ isActive }) =>
               (isActive ? "bg-[#244D3F] text-white" : "") +
-              " flex items-center gap-1 p-2 rounded-md "
+              " flex items-center gap-1 p-1 md:p-2 rounded-md"
             }
           >
             <FiClock /> Timeline
@@ -34,7 +34,7 @@ const Navbar = () => {
             to={"/stats"}
             className={({ isActive }) =>
               (isActive ? "bg-[#244D3F] text-white" : "") +
-              " flex items-center gap-1 p-2 rounded-md "
+              " flex items-center gap-1 p-1 md:p-2 rounded-md"
             }
           >
             <AiOutlineLineChart /> Stats

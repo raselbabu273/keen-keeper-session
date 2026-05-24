@@ -7,7 +7,7 @@ const HomePage = () => {
   const friends = use(friendPromise);
 
   return (
-    <div className="pb-20 max-w-12/16 mx-auto">
+    <div className="pb-10 max-w-14/16 md:pb-20 md:max-w-12/16 mx-auto">
       <div className="">
         <h3 className="text-2xl font-bold my-10">Your Friends</h3>
 

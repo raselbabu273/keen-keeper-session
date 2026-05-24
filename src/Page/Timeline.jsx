@@ -32,7 +32,7 @@ const Timelines = () => {
 
   return (
     <div className="p-8 flex justify-center my-20">
-      <div className="max-w-11/16 w-full space-y-6">
+      <div className="md:max-w-11/16 w-full space-y-6">
         <h1 className="text-4xl font-extrabold text-[#244D3F]">Timeline</h1>
 
         <div className="relative max-w-xs">

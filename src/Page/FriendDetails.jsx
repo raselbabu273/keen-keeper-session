@@ -1,10 +1,11 @@
-import { useContext, useState } from "react";
+
+import { useContext } from "react";
 import { FaRegEdit } from "react-icons/fa";
 import { LuArchive, LuPhoneCall, LuVideo } from "react-icons/lu";
 import { MdOutlineTextsms } from "react-icons/md";
 import { RiDeleteBinLine, RiNotificationSnoozeLine } from "react-icons/ri";
 import { useLoaderData, useParams } from "react-router";
-import TimelineContext from "../Context/TimelineContext";
+import { TimelineContext } from "../Context/Context";
 import { toast } from "react-toastify";
 
 const FriendDetails = () => {
@@ -12,7 +13,7 @@ const FriendDetails = () => {
 
   const friends = useLoaderData();
 
-  const expectedFriend = friends.find((friend) => friend.id == id);
+  const expectedFriend = friends.find((friend) => friend.id == parseInt(id));
 
   const {
     picture,
@@ -26,13 +27,12 @@ const FriendDetails = () => {
     next_due_date,
   } = expectedFriend;
 
-  const timelineContext = useContext(TimelineContext);
-  console.log(timelineContext);
+  const {timelineData, setTimelineData} = useContext(TimelineContext);
   
-
-  const [timelineData, setTimelineData] = useState([]);
-
   const handleTimelineData = (type, userDetails) => {
+
+    console.log(userDetails);
+    
     const newTimelineData = {
       ...userDetails,
       action: type,
@@ -40,7 +40,7 @@ const FriendDetails = () => {
     };
 
     setTimelineData([...timelineData, newTimelineData]);
-    toast.success("Done");
+    toast.success('Done');
   };
 
   const statusStyles = {

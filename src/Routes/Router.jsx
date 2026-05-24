@@ -4,6 +4,7 @@ import HomePage from "../Page/HomePage";
 import Timeline from "../Page/Timeline";
 import Stats from "../Page/Stats";
 import FriendDetails from "../Page/FriendDetails";
+import ErrorPage from "../Page/ErrorPage";
 
  export const router = createBrowserRouter([
   {
@@ -29,6 +30,7 @@ import FriendDetails from "../Page/FriendDetails";
         loader: () => fetch('/friends.json').then(res => res.json()),
         hydrateFallbackElement: <div className="flex justify-center"><span className="loading loading-spinner loading-xl"></span></div>
       }
-    ]
+    ],
+    errorElement: <ErrorPage />
   }
 ])

@@ -1,9 +1,11 @@
-
+import { useContext, useState } from "react";
 import { FaRegEdit } from "react-icons/fa";
 import { LuArchive, LuPhoneCall, LuVideo } from "react-icons/lu";
 import { MdOutlineTextsms } from "react-icons/md";
 import { RiDeleteBinLine, RiNotificationSnoozeLine } from "react-icons/ri";
 import { useLoaderData, useParams } from "react-router";
+import TimelineContext from "../Context/TimelineContext";
+import { toast } from "react-toastify";
 
 const FriendDetails = () => {
   const { id } = useParams();
@@ -24,6 +26,23 @@ const FriendDetails = () => {
     next_due_date,
   } = expectedFriend;
 
+  const timelineContext = useContext(TimelineContext);
+  console.log(timelineContext);
+  
+
+  const [timelineData, setTimelineData] = useState([]);
+
+  const handleTimelineData = (type, userDetails) => {
+    const newTimelineData = {
+      ...userDetails,
+      action: type,
+      time: new Date().toISOString(),
+    };
+
+    setTimelineData([...timelineData, newTimelineData]);
+    toast.success("Done");
+  };
+
   const statusStyles = {
     Overdue: "bg-red-500 text-white",
     "Almost due": "bg-amber-500 text-white",
@@ -41,9 +60,7 @@ const FriendDetails = () => {
               src={picture}
               alt={name}
             />
-            <h2 className="text-xl font-semibold mb-1">
-              {name}
-            </h2>
+            <h2 className="text-xl font-semibold mb-1">{name}</h2>
 
             <div className="flex justify-center mt-1 mb-2">
               <span
@@ -54,19 +71,20 @@ const FriendDetails = () => {
             </div>
 
             <div>
-                {tags.map((tag, index) => (
-              <div
-                key={index}
-                className="badge text-green-800 bg-green-200 mr-1.5 rounded-full mb-2">
-                    {tag}
-              </div>
-                ))}
-           </div>
+              {tags.map((tag, index) => (
+                <div
+                  key={index}
+                  className="badge text-green-800 bg-green-200 mr-1.5 rounded-full mb-2"
+                >
+                  {tag}
+                </div>
+              ))}
+            </div>
 
-            <p className="text-[#64748B] italic text-sm font-medium mb-1">{bio}</p>
-            <p className="text-[#64748B] text-sm">
-              Preferred: {email}
+            <p className="text-[#64748B] italic text-sm font-medium mb-1">
+              {bio}
             </p>
+            <p className="text-[#64748B] text-sm">Preferred: {email}</p>
           </div>
 
           <div className="space-y-2">
@@ -117,9 +135,7 @@ const FriendDetails = () => {
               </h3>
               <p className="text-[#64748B] text-sm">
                 Connect every{" "}
-                <span className="font-bold text-slate-800">
-                  {goal} days
-                </span>
+                <span className="font-bold text-slate-800">{goal} days</span>
               </p>
             </div>
             <button className="btn flex items-center gap-1 hover:bg-gray-100 text-slate-600 border border-gray-200 px-3 py-1.5 rounded-md text-xs font-medium transition duration-200">
@@ -132,18 +148,33 @@ const FriendDetails = () => {
               Quick Check-In
             </h3>
             <div className="grid grid-cols-3 gap-4">
-              <button className="flex flex-col items-center justify-center p-5 bg-slate-50 hover:bg-emerald-50 hover:text-emerald-700 text-slate-700 border border-slate-100 rounded-md transition duration-200 gap-2 cursor-pointer">
-                <span className="text-xl"><LuPhoneCall /></span>
+              <button
+                onClick={() => handleTimelineData("call", expectedFriend)}
+                className="flex flex-col items-center justify-center p-5 bg-slate-50 hover:bg-emerald-50 hover:text-emerald-700 text-slate-700 border border-slate-100 rounded-md transition duration-200 gap-2 cursor-pointer"
+              >
+                <span className="text-xl">
+                  <LuPhoneCall />
+                </span>
                 <span className="text-sm font-medium">Call</span>
               </button>
 
-              <button className="flex flex-col items-center justify-center p-5 bg-slate-50 hover:bg-emerald-50 hover:text-emerald-700 text-slate-700 border border-slate-100 rounded-md transition duration-200 gap-2 cursor-pointer">
-                <span className="text-xl"><MdOutlineTextsms /></span>
+              <button
+                onClick={() => handleTimelineData("text", expectedFriend)}
+                className="flex flex-col items-center justify-center p-5 bg-slate-50 hover:bg-emerald-50 hover:text-emerald-700 text-slate-700 border border-slate-100 rounded-md transition duration-200 gap-2 cursor-pointer"
+              >
+                <span className="text-xl">
+                  <MdOutlineTextsms />
+                </span>
                 <span className="text-sm font-medium">Text</span>
               </button>
 
-              <button className="flex flex-col items-center justify-center p-5 bg-slate-50 hover:bg-emerald-50 hover:text-emerald-700 text-slate-700 border border-slate-100 rounded-md transition duration-200 gap-2 cursor-pointer">
-                <span className="text-xl"><LuVideo /></span>
+              <button
+                onClick={() => handleTimelineData("video", expectedFriend)}
+                className="flex flex-col items-center justify-center p-5 bg-slate-50 hover:bg-emerald-50 hover:text-emerald-700 text-slate-700 border border-slate-100 rounded-md transition duration-200 gap-2 cursor-pointer"
+              >
+                <span className="text-xl">
+                  <LuVideo />
+                </span>
                 <span className="text-sm font-medium">Video</span>
               </button>
             </div>

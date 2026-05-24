@@ -5,6 +5,8 @@ import Timeline from "../Page/Timeline";
 import Stats from "../Page/Stats";
 import FriendDetails from "../Page/FriendDetails";
 import ErrorPage from "../Page/ErrorPage";
+import Hero from "../Page/Hero";
+import { Suspense } from "react";
 
  export const router = createBrowserRouter([
   {
@@ -13,8 +15,13 @@ import ErrorPage from "../Page/ErrorPage";
     children: [
       {
         path: '/',
-        Component: HomePage,
-        hydrateFallbackElement: <span className="loading loading-spinner loading-xl"></span>
+        element: 
+        <div>
+            <Hero /> 
+            <Suspense fallback={<div className="flex justify-center my-20"><span className="loading loading-spinner loading-xl"></span></div>}> 
+                <HomePage />
+            </Suspense>
+        </div>
       },
       {
         path: '/timeline',
@@ -28,7 +35,7 @@ import ErrorPage from "../Page/ErrorPage";
         path: '/friendDetails/:id',
         Component: FriendDetails,
         loader: () => fetch('/friends.json').then(res => res.json()),
-        hydrateFallbackElement: <div className="flex justify-center"><span className="loading loading-spinner loading-xl"></span></div>
+        hydrateFallbackElement: <div className="flex justify-center my-20"><span className="loading loading-spinner loading-xl"></span></div>
       }
     ],
     errorElement: <ErrorPage />

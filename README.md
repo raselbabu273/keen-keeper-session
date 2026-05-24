@@ -1,16 +1,91 @@
-# React + Vite
+<h1>Project: FriendLoop — Relationship Tracker App</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## 📖 Short Description
+A modern and responsive friendship management web application built with React.js.
+FriendLoop helps users keep track of meaningful relationships by monitoring communication history, setting friendship goals, and logging interactions like calls, texts, and video chats.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 📌 Project Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+FriendLoop is designed to help users maintain healthy social connections through a clean and interactive interface. The application allows users to:
 
-## Expanding the ESLint configuration
+- Track how long it has been since contacting friends
+- Log calls, texts, and video interactions
+- View relationship timelines
+- Analyze communication patterns visually
+- Manage friendship goals efficiently
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The project follows a fully responsive design and includes modern UI/UX practices inspired by a Figma layout.
+
+---
+
+✨ Key Features
+🔝 Responsive Navigation System
+- Fully responsive Navbar
+- Active route highlighting
+- Icons with navigation links
+- Mobile, tablet, and desktop optimized
+
+👫 Friend Management
+- Dynamic friend cards loaded from local JSON data
+- Detailed friend profiles
+- Status-based UI indicators
+- Relationship goals and next due dates
+
+⚡ Interaction Tracking
+- Quick Check-In actions:
+   - 📞 Call
+   - 💬 Text
+   - 🎥 Video
+- Automatically generates timeline entries
+- Real-time toast notifications
+
+📜 Timeline System
+- Complete interaction history
+- Filter timeline entries by:
+   - Call
+   - Text
+   - Video
+
+📊 Friendship Analytics
+- Pie Chart visualization using Recharts
+- Displays communication activity statistics
+
+🛠️ Additional Features
+- Loading animation while fetching data
+- Custom 404 page
+- Route reload support after deployment
+- Fully responsive layout across all devices
+
+---
+
+🧰 Technologies Used
+| Technology                  | Purpose                     |
+| --------------------------- | --------------------------- |
+| React.js                    | Frontend UI Development     |
+| React Router DOM            | Routing & Navigation        |
+| Tailwind CSS                | Styling & Responsive Design |
+| DaisyUI / Component Library | UI Components               |
+| Recharts                    | Data Visualization          |
+| React Icons                 | Icons                       |
+| React Toastify / Sonner     | Toast Notifications         |
+| JavaScript (ES6+)           | Application Logic           |
+
+
+---
+
+🌟 Future Improvements
+- Authentication system
+- Cloud database integration
+- Real-time syncing
+- Reminder notifications
+- Dark/Light theme toggle
+
+---
+
+📸 Screenshots
+![Home Page](./src/assets/Home.png)
+![Pie-chart](./src/assets/Pie-chart.png)
+![404 page](./src/assets/404.png)

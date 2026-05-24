@@ -33,7 +33,7 @@ const Stats = () => {
   };
 
   return (
-    <div className=" p-8 flex justify-center my-12">
+    <div className="md:p-8 flex justify-center my-12">
       <div className="w-full md:max-w-11/16 mx-auto p-6 space-y-6">
         <h2 className="text-4xl font-extrabold text-[#244D3F]">
           Friendship Analytics

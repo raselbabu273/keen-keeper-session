@@ -61,7 +61,7 @@ const FriendDetails = () => {
 
   return (
     <div className=" p-8 flex justify-center my-20">
-      <div className="max-w-12/16 w-full grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="md:max-w-12/16 w-full grid grid-cols-1 md:grid-cols-3 gap-6">
         <div className="space-y-4">
           <div className="bg-[#FFFFFF] rounded-md shadow-sm border border-gray-100 p-5 flex flex-col items-center text-center">
             <img

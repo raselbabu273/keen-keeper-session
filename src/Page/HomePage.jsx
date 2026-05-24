@@ -25,7 +25,7 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className="flex justify-center gap-6 border-b border-gray-300">
+      <div className="grid grid-cols-2 md:grid-cols-4 justify-center gap-6 border-b border-gray-300">
         <div className="text-center bg-[#FFFFFF] my-10 p-8 shadow-md rounded-md w-full">
           <h3 className="text-3xl font-semibold mb-2">8</h3>
           <p className="text-[#64748B]">Total Friends</p>

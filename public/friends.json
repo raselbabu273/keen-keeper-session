@@ -9,7 +9,7 @@
     "tags": ["college", "inner circle"],
     "bio": "Roommate from Boston University. Avid coffee drinker and weekend marathon runner.",
     "goal": 14,
-    "next_due_date": "2026-05-17"
+    "next_due_date": "May 17, 2026"
   },
   {
     "id": 2,
@@ -21,7 +21,7 @@
     "tags": ["childhood", "gaming"],
     "bio": "Grew up on the same street. We still play co-op games every Tuesday night.",
     "goal": 7,
-    "next_due_date": "2026-05-23"
+    "next_due_date": "May 23, 2026"
   },
   {
     "id": 3,
@@ -33,7 +33,7 @@
     "tags": ["travel", "long distance"],
     "bio": "Met during a backpacking trip through Europe. Currently living in Berlin.",
     "goal": 30,
-    "next_due_date": "2026-05-25"
+    "next_due_date": "May 25, 2026"
   },
   {
     "id": 4,
@@ -45,7 +45,7 @@
     "tags": ["professional", "mentor"],
     "bio": "Former engineering lead at my first job. Always gives great career advice over lunch.",
     "goal": 30,
-    "next_due_date": "2026-05-09"
+    "next_due_date": "May 09, 2026"
   },
   {
     "id": 5,
@@ -57,7 +57,7 @@
     "tags": ["neighbor", "fitness"],
     "bio": "Lives two doors down. Our go-to partner for morning tennis matches and local community events.",
     "goal": 7,
-    "next_due_date": "2026-05-26"
+    "next_due_date": "May 26, 2026"
   },
   {
     "id": 6,
@@ -69,7 +69,7 @@
     "tags": ["hobby", "music"],
     "bio": "Bassist in our casual weekend garage band. Loves vintage vinyl records and vinyl hunting.",
     "goal": 14,
-    "next_due_date": "2026-05-22"
+    "next_due_date": "May 22, 2026"
   },
   {
     "id": 7,
@@ -81,7 +81,7 @@
     "tags": ["high school", "old friend"],
     "bio": "Best friend from high school chemistry class. We always catch up when she is back in town.",
     "goal": 45,
-    "next_due_date": "2026-05-11"
+    "next_due_date": "May 11, 2026"
   },
   {
     "id": 8,
@@ -93,6 +93,6 @@
     "tags": ["college", "close friend"],
     "bio": "Met during freshman orientation. Shares a passion for indie films and cooking complicated recipes.",
     "goal": 14,
-    "next_due_date": "2026-06-03"
+    "next_due_date": "May 03, 2026"
   }
 ]

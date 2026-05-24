@@ -40,7 +40,16 @@ const FriendDetails = () => {
     };
 
     setTimelineData([...timelineData, newTimelineData]);
-    toast.success('Done');
+    
+    if(type.toLowerCase() === 'call'){
+        toast.success(`Call with ${userDetails.name}`)
+    }
+    else if(type.toLowerCase() === 'text'){
+        toast.success(`Text with ${userDetails.name}`)
+    }
+    else{
+        toast.success(`Video call with ${userDetails.name}`)
+    }
   };
 
   const statusStyles = {
